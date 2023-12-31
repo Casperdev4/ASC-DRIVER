@@ -347,7 +347,7 @@ body {
 }
 
 .nos-vehicules-pc img {
-  margin-top: -5%;
+  margin-top: -10%;
   margin-bottom: -15%;
 }
 
@@ -400,7 +400,7 @@ body {
 .ville-lumiere-mob,
 .presta1-mob,
 .avantages-taxi-mob,
-.contact-icon, .nos-vehicules-pc {
+.contact-icon, .nos-vehicules {
   display: none;
 }
 
@@ -813,7 +813,7 @@ body {
   .ville-lumiere,
   .presta1,
   .presta2,
-  .avantages-taxi {
+  .avantages-taxi, .nos-vehicules-pc {
     display: none;
   }
 
