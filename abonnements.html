@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords"
+        content="taxi, chauffeur privé, réservation de taxi, transport privé, service de taxi, déplacement en ville, service fiable, sécurité en taxi">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Découvrez nos services de taxi ou de chauffeurs privés experts. Fiabilité, sécurité 24/7. Réservez dès maintenant pour un voyage de qualité.">
+    <link href="style.css" rel="stylesheet">
+    <title>Nos Services | Sur Mesure</title>
+    <link rel="icon" type="image/x-icon" href="https://webprime.fr/logo/favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="./logo/apple-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/android-icon-32x32.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./logo/ms-icon-32x32.png">
+    <meta name="msapplication-TileImage" content="./logo/ms-icon-96x96.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="asc-png-500.png" alt="taxi" class="logo">
+        </a>
+        <label for="btn" class="icon">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="80" height="11"></rect>
+                <rect y="26" width="60" height="11"></rect>
+                <rect y="52" width="70" height="11"></rect>
+            </svg>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <label for="btn2" class="show">Nos Services +</label>
+                <input type="checkbox" id="btn2">
+                <ul class="dropdown">
+                    <li class="drop-item">
+                        <a href="taxi.html">Taxi</a>
+                    </li>
+                    <li class="drop-item">
+                        <a href="chauffeur-prive.html">Chauffeur Privé</a>
+                    </li>
+                    <li class="drop-item">
+                        <a href="abonnements.html">Abonnements</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="tel:0767879898">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="image-abonnement">
+        <h1>Abonnements</h1>
+    </div>
+    <div class="contenu">
+        <h2>UNE EQUIPE PROFESSIONNELLE ET DES EQUIPEMENTS MODERNES</h2>
+        <p>
+            En choisissant notre société de chauffeur privé, vous optez pour une équipe professionnelle dévouée et des
+            équipements modernes qui redéfinissent votre expérience de transport. Notre équipe de chauffeurs,
+            soigneusement sélectionnés pour leur professionnalisme et leur connaissance approfondie de la conduite,
+            s'engage à vous offrir un service fiable, sûr et courtois. Nous comprenons l'importance de votre temps et de
+            votre confort, c'est pourquoi nous mettons à votre disposition des véhicules équipés des dernières
+            technologies pour assurer des déplacements fluides et agréables.
+        </p>
+    </div>
+    <div class="contenu">
+        <h2>POURQUOI CHOISIR ASC DRIVER DANS L'ILES DE FRANCE ?</h2>
+        <p>
+            En optant pour ASC Driver dans l'Île-de-France, vous choisissez bien plus qu'un service de chauffeur, vous
+            choisissez une expérience de transport exceptionnelle. Notre engagement envers la satisfaction du client et
+            notre réputation d'excellence font de nous le choix idéal pour tous vos déplacements. Notre équipe de
+            chauffeurs professionnels, formés pour offrir un service courtois et fiable, est là pour vous garantir des
+            trajets en toute sécurité et dans le confort. Chez ASC Driver, nous comprenons l'importance de la poctualité
+            et de la qualité de service.
+        </p>
+    </div>
+    <div class="contenu">
+        <h2>FAITES CONFIANCE À NOS PROFESSIONNELLES DIPLÔMÉS ET LEUR SAVOIR-FAIRE</h2>
+        <p>
+            Faites confiance à nos professionnels diplômés chez ASC Driver, experts dans l'art du transport. Forts de
+            formations approfondies et de qualifications, nos chauffeurs sont formés à vous offrir une
+            expérience de transport inégalée. Leur savoir-faire se manifeste à travers une conduite sécurisée, une
+            connaissance approfondie des itinéraires et un service client de qualité. Nous croyons en
+            la valeur de l'expertise, et c'est pourquoi chaque trajet avec nous représente l'alliance parfaite entre
+            compétence, professionnalisme et satisfaction client. Optez pour la tranquillité d'esprit en sélectionnant
+            nos chauffeurs qualifiés.
+        </p>
+    </div>
+    <h2>RESERVATION</h2>
+    <div class="form-container">
+        <div class="image-container"><img src="asc-png-500.png" alt=""></div>
+        <form action="process.php" method="post">
+    
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="nom" required>
+    
+            <label for="email">E-mail :</label>
+            <input type="text" id="email" name="tel" required>
+    
+            <label for="tel">Téléphone :</label>
+            <input type="text" id="tel" name="telephone" required>
+    
+            <label for="departure">Lieu de départ :</label>
+            <input type="text" id="departure" name="lieu_depart" required>
+    
+            <label for="arrival">Lieu d'arrivée :</label>
+            <input type="text" id="arrival" name="lieu_arrivee" required>
+    
+            <label for="date">Date souhaitée :</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="time">Heure souhaitée :</label>
+            <input type="time" id="time" name="heure" required>
+    
+            <label for="passengers">Nombre de passagers :</label>
+            <select id="passengers" name="passagers" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit">ENVOYER</button>
+        </form>
+    </div>    
+    <div class="contact">
+        <h4><strong class="strong-color">HORAIRES</strong></h4>
+        <p>Lundi : 24/24 <br>
+            Mardi : 24/24 <br>
+            Mercredi : 24/24 <br>
+            Jeudi : 24/24 <br>
+            Vendredi : 24/24 <br>
+            Samedi : 24/24 <br>
+            Dimanche : 24/24
+        </p>
+        <h4><strong class="strong-color">CONTACTEZ NOUS</strong></h4>
+        <p class="liens">Tel : <a href="tel:0909090990" target="_blank">0909090990</a></p>
+        <p class="liens">E-mail : <a href="mailto:webprie@kdkd" target="_blank">asc.driver@outlook.com</a></p>
+        <div class="liens-wp">
+            <p>Site réalisé par <a href="https://webprime.fr/" target="_blank">WebPrime</a> - <a href=""
+                    target="_blank">mentions légales</a>.
+            </p>
+        </div>
+    </div>
+    <div class="contact-icon"><a href="tel:0787987867"><img src="tel.png" alt="contact"></a></div>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuToggle = document.getElementById("btn");
+            var navLinks = document.querySelectorAll(".nav-menu a");
+
+            // Ferme le menu lorsqu'un lien est cliqué
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    menuToggle.checked = false;
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.8
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-up');
+                    }
+                });
+            }, options);
+
+            const elements = document.querySelectorAll('.rectangle_gris');
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+</html>
