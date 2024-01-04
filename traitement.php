@@ -3,12 +3,20 @@
 $nom = $_POST['nom'];
 $email = $_POST['e-mail'];
 $telephone = $_POST['telephone'];
-$services = $_POST['services'];
+$depart = $_POST['depart'];
+$arrive = $_POST['arrive'];
+$date = $_POST['telephone'];
+$heure = $_POST['heure'];
+$passagers = $_POST['passagers'];
 
 $message = "Nom: $nom \n";
 $message .= "E-mail: $email \n";
 $message .= "Téléphone: $telephone \n";
-$message .= "Prestations: $services \n";
+$message = "Lieu de départ: $depart \n";
+$message .= "Lieu d'arrivé: $arrive \n";
+$message .= "Date: $date \n";
+$message .= "Heure: $heure \n";
+$message .= "Passagers: $passagers \n";
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
