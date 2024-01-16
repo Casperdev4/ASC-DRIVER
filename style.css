@@ -439,7 +439,7 @@ body {
   }
 
   body {
-    margin-top: 19%;
+    margin-top: 22%;
   }
 
   /*  Navigation */
@@ -530,7 +530,6 @@ body {
     position: relative;
     width: 100%;
     height: 300px;
-    background-image: url('img-services.webp');
     background-size: cover;
     background-position: center 35%;
     color: #fff;
@@ -544,7 +543,6 @@ body {
     position: relative;
     width: 100%;
     height: 300px;
-    background-image: url('taxi-paris.jpg');
     background-size: cover;
     background-position: center 35%;
     color: #fff;
