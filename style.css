@@ -287,44 +287,8 @@ body {
   justify-content: center;
 }
 
-.icon-anime {
+.icon {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.icon-item1,
-.icon-item2,
-.icon-item3,
-.icon-item4 {
-  text-align: center;
-  margin: 0 5px;
-}
-
-.icon-item1 img,
-.icon-item3 img {
-  width: 60%;
-  height: auto;
-  border-radius: 30% 30% 0;
-}
-
-.icon-item2 img,
-.icon-item4 img {
-  width: 60%;
-  height: auto;
-  border-radius: 30% 30% 30% 0;
-}
-
-.icon-item1 p,
-.icon-item2 p,
-.icon-item3 p,
-.icon-item4 p {
-  margin: 5px 0 0;
-  padding: 8px;
-  background-color: #f9f6f4;
-  font-size: 18px;
 }
 
 .ville-lumiere {
@@ -502,13 +466,6 @@ body {
     margin-left: 0;
   }
 
-  .icon {
-    fill: #000000;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-
   .navbar input,
   .nav-menu,
   .dropdown {
@@ -621,49 +578,6 @@ body {
     margin-bottom: 5%;
     display: flex;
     justify-content: center;
-  }
-
-  .icon-anime {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .icon-item1,
-  .icon-item2,
-  .icon-item3,
-  .icon-item4 {
-    text-align: center;
-    margin: 0 5px;
-  }
-
-  .icon-item1 img,
-  .icon-item3 img {
-    margin-top: 10%;
-    width: 35%;
-    height: auto;
-    border-radius: 30% 30% 0;
-  }
-
-  .icon-item2 img,
-  .icon-item4 img {
-    margin-top: 10%;
-    width: 35%;
-    height: auto;
-    border-radius: 30% 30% 30% 0;
-  }
-
-  .icon-item1 p,
-  .icon-item2 p,
-  .icon-item3 p,
-  .icon-item4 p {
-    margin: 5px 0 0;
-    padding: 8px;
-    background-color: #f9f6f4;
-    font-size: 18px;
   }
 
   .ville-lumiere-mob {
