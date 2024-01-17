@@ -325,6 +325,7 @@ h5 {
 }
 
 .nos-vehicules-pc img {
+  width: 100%;
   margin-top: -10%;
   margin-bottom: -15%;
 }
