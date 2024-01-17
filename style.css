@@ -69,8 +69,6 @@ h5 {
   width: 90%;
 }
 
-/*  Navigation */
-
 .navbar {
   background-color: #c8b29b;
   padding: 10px;
@@ -483,8 +481,6 @@ ion-icon {
   body {
     margin-top: 22%;
   }
-
-  /*  Navigation */
 
   .navbar {
     background-color: #c8b29b;
