@@ -73,59 +73,59 @@
 <url>
 <loc>https://chauffeur-prive-75.fr/chauffeur-prive.html</loc>
     <image:image>
-        <image:loc>https://assainissement75.fr/camion-assainissement.webp</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/img-services.webp</image:loc>
         <image:caption>Découvrez nos services d'assainissement pour des solutions rapides et efficaces.</image:caption>
         <image:title>Camion d'Assainissement</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://assainissement75.fr/camion-pompage2.webp</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/prestas-PC.svg</image:loc>
         <image:caption>Nos camions de pompage pour des solutions efficaces et adaptées à vos besoins d'assainissement.</image:caption>
         <image:title>Camion de Pompage</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://assainissement75.fr/camion-pompage.webp</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/prestas2-PC.svg</image:loc>
         <image:caption>Nos camions de pompage pour des solutions efficaces et adaptées à vos besoins d'assainissement.</image:caption>
         <image:title>Camion de Pompage Paris</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://assainissement75.fr/poid-lourd.webp</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/presta-mobile.svg</image:loc>
         <image:caption>Découvrez nos services d'assainissement avec notre flotte de poids lourds, garantissant une intervention rapide et fiable.</image:caption>
         <image:title>Assainissement avec Poids Lourd</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://assainissement75.fr/camion-curage.webp</image:loc>
-        <image:caption>Explorez nos services de curage avec nos camions spécialisés, assurant un assainissement complet et efficace.</image:caption>
-        <image:title>Camion de Curage Paris</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://assainissement75.fr/camion-debouchage.webp</image:loc>
-        <image:caption>Optez pour nos services de débouchage avec nos camions spécialisés, garantissant des solutions rapides et durables.</image:caption>
-        <image:title>Camion de Débouchage</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://assainissement75.fr/techniciens-assainissement.webp</image:loc>
-        <image:caption>Des solutions efficaces avec nos techniciens spécialisés en assainissement à Paris.</image:caption>
-        <image:title>Techniciens en Assainissement</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://assainissement75.fr/agents-assainissement.webp</image:loc>
-        <image:caption>Des solutions efficaces avec nos agents d'assainissement spécialisés en assainissement à Paris.</image:caption>
-        <image:title>Agents Assainissement</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://assainissement75.fr/techniciens-traitement-des-eaux.webp</image:loc>
-        <image:caption>Des solutions efficaces avec nos techniciens de traitement des eaux à Paris.</image:caption>
-        <image:title>Techniciens Traitement Des Eaux</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://assainissement75.fr/specialistes-assainissement.webp</image:loc>
-        <image:caption>Explorez nos services d'assainissement avec notre équipe de spécialistes, assurant des solutions adaptées et fiables pour vos besoins.</image:caption>
-        <image:title>Spécialistes en Assainissement</image:title>
     </image:image>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-75.fr/taxi.html</loc>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/taxi-paris.jpg</image:loc>
+        <image:caption>Découvrez nos services d'assainissement pour des solutions rapides et efficaces.</image:caption>
+        <image:title>Camion d'Assainissement</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/prestas-PC.svg</image:loc>
+        <image:caption>Nos camions de pompage pour des solutions efficaces et adaptées à vos besoins d'assainissement.</image:caption>
+        <image:title>Camion de Pompage</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/prestas2-PC.svg</image:loc>
+        <image:caption>Nos camions de pompage pour des solutions efficaces et adaptées à vos besoins d'assainissement.</image:caption>
+        <image:title>Camion de Pompage Paris</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/avantage-taxi.svg</image:loc>
+        <image:caption>Découvrez nos services d'assainissement avec notre flotte de poids lourds, garantissant une intervention rapide et fiable.</image:caption>
+        <image:title>Assainissement avec Poids Lourd</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/presta-mobile.svg</image:loc>
+        <image:caption>Nos camions de pompage pour des solutions efficaces et adaptées à vos besoins d'assainissement.</image:caption>
+        <image:title>Camion de Pompage Paris</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/avantages-mobile.svg</image:loc>
+        <image:caption>Découvrez nos services d'assainissement avec notre flotte de poids lourds, garantissant une intervention rapide et fiable.</image:caption>
+        <image:title>Assainissement avec Poids Lourd</image:title>
+    </image:image>
 </url>
 
 <url>
