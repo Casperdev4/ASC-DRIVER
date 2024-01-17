@@ -144,6 +144,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: auto;
@@ -169,6 +170,7 @@ h5 {
   display: block;
   margin-bottom: 8px;
   font-size: 19px;
+  margin-left: 2%;
 }
 
 .form-container input,
