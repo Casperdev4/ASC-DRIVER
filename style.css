@@ -86,8 +86,8 @@ h5 {
 .logo {
   display: flex;
   align-items: center;
-  max-height: 150px;
-  min-height: 150px;
+  max-height: 190px;
+  min-height: 190px;
   margin-left: 10%;
 }
 
@@ -155,15 +155,8 @@ h5 {
   color: #ffffff;
 }
 
-.image-container {
-  margin-top: -20px;
-  margin-bottom: -35px;
-  width: 25%;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
+.form-container h2 {
+  color: #222;
 }
 
 .form-container label {
@@ -433,7 +426,7 @@ ion-icon {
     color: #c8b29b;
     text-align: center;
     margin-top: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     margin-left: 4%;
     margin-right: 4%;
     font-size: 25px;
@@ -501,9 +494,9 @@ ion-icon {
   .logo {
     display: flex;
     align-items: center;
-    max-height: 120px;
-    min-height: 120px;
-    margin-left: 0;
+    max-height: 150px;
+    min-height: 150px;
+    margin-left: -5px;
   }
 
   .navbar input,
@@ -716,7 +709,7 @@ ion-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -727,18 +720,9 @@ ion-icon {
     color: #ffffff;
   }
 
-  .image-container {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: -45px;
-    margin-bottom: -20px;
-    border-radius: 20px;
-    width: 60%;
-  }
-
-  .image-container img {
-    width: 100%;
-    height: auto;
+  .form-container h2 {
+    margin-top: 0;
+    margin-bottom: 13%;
   }
 
   .form-container label {

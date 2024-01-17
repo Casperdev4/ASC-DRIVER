@@ -10,7 +10,7 @@
     <meta name="description"
         content="Réservez votre chauffeur privé avec ASC DRIVER pour des déplacements impeccables. Profitez d'un service fiable, ponctuel et luxueux. Experts du transport privé, nos chauffeurs vous assurent une expérience sécurisée. Réservez dès maintenant pour des trajets en toute sérénité.">
     <link href="style.css" rel="stylesheet">
-    <title>CHAUFFEUR PRIVÉ 75 - L'Élégance de vos Trajets Privés</title>
+    <title>CHAUFFEUR PRIVÉ PARIS - L'Élégance de vos Trajets Privés</title>
     <link rel="icon" type="image/x-icon" href="https://chauffeur-prive-75.fr/favicon.ico">
     <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="https://chauffeur-prive-75.fr/logo/apple-icon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://chauffeur-prive-75.fr/logo/android-icon-32x32.png">
@@ -58,30 +58,22 @@
         <h1>ASC DRIVER</h1>
     </div>
     <div class="form-container">
-        <div class="image-container"><img src="asc-png-500.png" alt=""></div>
+        <h2>RÉSERVATION</h2>
         <form action="traitement.php" method="post">
-
             <label for="name">Nom :</label>
             <input type="text" id="name" name="nom" required>
-
             <label for="email">E-mail :</label>
             <input type="text" id="email" name="email" required>
-
             <label for="tel">Téléphone :</label>
             <input type="text" id="tel" name="telephone" required>
-
             <label for="departure">Lieu de départ :</label>
             <input type="text" id="departure" name="lieu_depart" required>
-
             <label for="arrival">Lieu d'arrivée :</label>
             <input type="text" id="arrival" name="lieu_arrivee" required>
-
             <label for="date">Date souhaitée :</label>
             <input type="date" id="date" name="date" required>
-
             <label for="time">Heure souhaitée :</label>
             <input type="time" id="time" name="heure" required>
-
             <label for="passengers">Nombre de passagers :</label>
             <select id="passengers" name="passagers" required>
                 <option value="1">1</option>
@@ -90,7 +82,6 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-
             <button type="submit">ENVOYER</button>
         </form>
     </div>
@@ -284,40 +275,30 @@
             et le luxe sophistiqué de la Classe E, et laissez-nous vous offrir un service de chauffeur privé inégalé.
         </p>
     </div>
-    <h2>RESERVATION</h2>
     <div class="form-container">
-        <div class="image-container"><img src="asc-png-500.png" alt="">
-        </div>
-        <form action="process.php" method="post">
-
-            <label for="departure">Nom :</label>
+        <h2>RÉSERVATION</h2>
+        <form action="traitement.php" method="post">
+            <label for="name">Nom :</label>
             <input type="text" id="name" name="nom" required>
-
-            <label for="departure">E-mail :</label>
-            <input type="text" id="departure" name="tel" required>
-
-            <label for="departure">Téléphone :</label>
+            <label for="email">E-mail :</label>
+            <input type="text" id="email" name="email" required>
+            <label for="tel">Téléphone :</label>
             <input type="text" id="tel" name="telephone" required>
-
             <label for="departure">Lieu de départ :</label>
-            <input type="text" id="tel" name="telephone" required>
-
-            <label for="departure">Lieu d'arrivé :</label>
-            <input type="text" id="tel" name="telephone" required>
-
-            <label for="date">Date souhaité :</label>
+            <input type="text" id="departure" name="lieu_depart" required>
+            <label for="arrival">Lieu d'arrivée :</label>
+            <input type="text" id="arrival" name="lieu_arrivee" required>
+            <label for="date">Date souhaitée :</label>
             <input type="date" id="date" name="date" required>
-
-            <label for="time">Heure souhaité :</label>
-            <input type="time" id="time" name="time" required>
-
-            <label for="passengers">Nombre de passagés :</label>
-            <select id="passengers" name="passengers" required>
+            <label for="time">Heure souhaitée :</label>
+            <input type="time" id="time" name="heure" required>
+            <label for="passengers">Nombre de passagers :</label>
+            <select id="passengers" name="passagers" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="3">4</option>
-                <option value="3">5</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
             <button type="submit">ENVOYER</button>
         </form>
