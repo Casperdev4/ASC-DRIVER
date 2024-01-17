@@ -29,25 +29,28 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 try {
-    $mail->isSMTP();                      
-    $mail->Host       = 'smtp.ionos.fr';        
-    $mail->SMTPAuth   = true;                
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.ionos.fr';
+    $mail->SMTPAuth   = true;
     $mail->Username   = 'contact@webprime.fr';
-    $mail->Password   = 'Allamalyjass912!';     
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;       
-    $mail->Port       = 465; 
+    $mail->Password   = 'Allamalyjass912!';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = 465;
 
     $mail->setFrom('contact@webprime.fr', 'WebPrime');
-    $mail->addAddress('allam.bilal91@gmail.com'); 
-    $mail->addAddress('contact@webprime.fr'); 
+    $mail->addAddress('allam.bilal91@gmail.com');
+    $mail->addAddress('contact@webprime.fr');
 
-    $mail->isHTML(true);   
+    $mail->isHTML(true);
     $mail->Subject = 'Formulaire de contact';
     $mail->Body    = $message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Formulaire envoyé';
+
+    header('Location: index.html');
+    exit();
 } catch (Exception $e) {
     echo "Message non envoyé. Mailer Error: {$mail->ErrorInfo}";
 }
+?>
