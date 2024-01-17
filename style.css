@@ -33,6 +33,10 @@ p {
   line-height: 1.8;
 }
 
+.p-lumiere a {
+  color: #222;
+}
+
 h2 {
   color: #c8b29b;
   text-align: center;
@@ -653,6 +657,10 @@ ion-icon {
 
   .avantages-taxi-mob {
     display: block;
+  }
+
+  .nos-vehicules-mob {
+    margin-bottom: -13%;
   }
 
   .nos-vehicules {
