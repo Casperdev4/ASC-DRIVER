@@ -1,7 +1,7 @@
 <?php
 
 $nom = $_POST['nom'];
-$email = $_POST['e-mail'];
+$email = $_POST['email'];
 $telephone = $_POST['telephone'];
 $depart = $_POST['lieu_depart'];
 $arrive = $_POST['lieu_arrivee'];
