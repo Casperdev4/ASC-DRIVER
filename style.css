@@ -361,23 +361,6 @@ ion-icon {
   background-color: #45a049;
 }
 
-.p-taxi p,
-.p-vtc p,
-.p-lumiere p,
-.ville-lumiere-mob img {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.p-vtc p.slide-up,
-.p-taxi p.slide-up,
-.p-lumiere p.slide-up,
-.ville-lumiere-mob img.slide-up {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .contact {
   margin-top: 10%;
   padding: 2%;

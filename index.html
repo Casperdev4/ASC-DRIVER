@@ -350,29 +350,6 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.8
-            };
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('slide-up');
-                    }
-                });
-            }, options);
-
-            const elements = document.querySelectorAll('.p-taxi p, .p-vtc p, .p-lumiere p, .ville-lumiere-mob img');
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
