@@ -11,9 +11,9 @@ $passagers = $_POST['passagers'];
 
 $message = "Nom: $nom \n";
 $message .= "E-mail: $email \n";
-$message .= "Téléphone: $telephone \n";
-$message .= "Lieu de départ: $depart \n";
-$message .= "Lieu d'arrivé: $arrive \n";
+$message .= "Telephone: $telephone \n";
+$message .= "Lieu de depart: $depart \n";
+$message .= "Lieu d'arrive: $arrive \n";
 $message .= "Date: $date \n";
 $message .= "Heure: $heure \n";
 $message .= "Passagers: $passagers \n";
