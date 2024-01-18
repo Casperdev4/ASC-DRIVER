@@ -37,8 +37,8 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('contact@webprime.fr', 'WebPrime');
-    $mail->addAddress('allam.bilal91@gmail.com');
+    $mail->setFrom('contact@webprime.fr', 'ASC-DRIVER');
+    $mail->addAddress('asc.driver@outlook.com');
     $mail->addAddress('contact@webprime.fr');
 
     $mail->isHTML(true);
