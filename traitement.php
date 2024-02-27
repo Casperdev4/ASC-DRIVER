@@ -8,13 +8,13 @@ $date = $_POST['date'];
 $heure = $_POST['heure'];
 $passagers = $_POST['passagers'];
 
-$message = "Nom: $nom \n";
-$message .= "/ E-mail: $email \n";
-$message .= "/ Depart: $depart \n";
-$message .= "/ Arrive: $arrive \n";
-$message .= "/ Date: $date \n";
-$message .= "/ Heure: $heure \n";
-$message .= "/ Passagers: $passagers \n";
+$message = "NOM : $nom \n";
+$message .= "/ E-MAIL : $email \n";
+$message .= "/ DEPART : $depart \n";
+$message .= "/ ARRIVE : $arrive \n";
+$message .= "/ DATE : $date \n";
+$message .= "/ HEURE : $heure \n";
+$message .= "/ PASSAGERS : $passagers \n";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
