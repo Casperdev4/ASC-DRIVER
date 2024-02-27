@@ -259,9 +259,9 @@
             <input type="text" id="departure2" name="lieu_depart" required>
             <label for="arrival">Lieu d'arrivée :</label>
             <input type="text" id="arrival2" name="lieu_arrivee" required>
-            <label for="date">Date souhaitée :</label>
+            <label for="date">Date :</label>
             <input type="date" id="date" name="date" required>
-            <label for="time">Heure souhaitée :</label>
+            <label for="time">Heure :</label>
             <input type="time" id="time" name="heure" required>
             <label for="passengers">Nombre de passagers :</label>
             <select id="passengers" name="passagers" required>
@@ -273,6 +273,7 @@
             </select>
             <button type="submit">ENVOYER</button>
         </form>
+        <div id="price2"></div> <!-- Le prix s'affichera ici -->
     </div>
     <div class="contact">
         <h4><strong class="strong-color">HORAIRES</strong></h4>
@@ -332,6 +333,49 @@
             initAutocomplete();
         };
     </script>
+    <script>
+        function initAutocomplete() {
+            // ... (votre script d'initialisation existant)
+        }
+    
+        function calculatePrice(departureId, arrivalId, resultDivId) {
+            var departure = document.getElementById(departureId).value;
+            var arrival = document.getElementById(arrivalId).value;
+    
+            // Utilisez l'API Distance Matrix pour obtenir la distance entre les deux adresses
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix({
+                origins: [departure],
+                destinations: [arrival],
+                travelMode: 'DRIVING',
+                unitSystem: google.maps.UnitSystem.METRIC
+            }, function(response, status) {
+                if (status == 'OK' && response.rows[0].elements[0].status == 'OK') {
+                    var distance = response.rows[0].elements[0].distance.value / 1000; // Convertir en kilomètres
+                    var price = calculatePriceBasedOnDistance(distance);
+    
+                    // Afficher le résultat dans la div spécifiée
+                    document.getElementById(resultDivId).innerHTML = 'Estimation de prix : ' + price + ' €';
+                } else {
+                    alert('Erreur de calcul de distance : ' + status);
+                }
+            });
+    
+            // Empêcher la soumission du formulaire
+            return false;
+        }
+    
+        function calculatePriceBasedOnDistance(distance) {
+            var pricePerKm = 2; // Prix par kilomètre
+            return (distance * pricePerKm).toFixed(2); // Calculer le prix total
+        }
+    
+        // Utilisez l'événement load pour garantir que la page est complètement chargée
+        window.onload = function() {
+            initAutocomplete();
+        };
+    </script>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
