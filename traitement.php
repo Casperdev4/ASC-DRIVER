@@ -4,7 +4,7 @@ $nom = $_POST['nom'];
 $email = $_POST['email'];
 $depart = $_POST['lieu_depart'];
 $arrive = $_POST['lieu_arrivee'];
-$date = $_POST['telephone'];
+$date = $_POST['date'];
 $heure = $_POST['heure'];
 $passagers = $_POST['passagers'];
 
