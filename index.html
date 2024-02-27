@@ -64,9 +64,9 @@
             <input type="text" id="departure1" name="lieu_depart" required>
             <label for="arrival">Lieu d'arrivée :</label>
             <input type="text" id="arrival1" name="lieu_arrivee" required>
-            <label for="date">Date souhaitée :</label>
+            <label for="date">Date :</label>
             <input type="date" id="date" name="date" required>
-            <label for="time">Heure souhaitée :</label>
+            <label for="time">Heure :</label>
             <input type="time" id="time" name="heure" required>
             <label for="passengers">Nombre de passagers :</label>
             <select id="passengers" name="passagers" required>
@@ -259,9 +259,9 @@
             <input type="text" id="departure2" name="lieu_depart" required>
             <label for="arrival">Lieu d'arrivée :</label>
             <input type="text" id="arrival2" name="lieu_arrivee" required>
-            <label for="date">Date souhaitée :</label>
+            <label for="date">Date :</label>
             <input type="date" id="date" name="date" required>
-            <label for="time">Heure souhaitée :</label>
+            <label for="time">Heure :</label>
             <input type="time" id="time" name="heure" required>
             <label for="passengers">Nombre de passagers :</label>
             <select id="passengers" name="passagers" required>
@@ -273,7 +273,6 @@
             </select>
             <button type="submit">ENVOYER</button>
         </form>
-        <div id="price2"></div> <!-- Le prix s'affichera ici -->
     </div>
     <div class="contact">
         <h4><strong class="strong-color">HORAIRES</strong></h4>
@@ -333,59 +332,6 @@
             initAutocomplete();
         };
     </script>
-    <script>
-        // Fonction pour calculer le prix en fonction de la distance
-        function calculatePriceBasedOnDistance(distance) {
-            var pricePerKm = 2; // Prix par kilomètre
-            return (distance * pricePerKm).toFixed(2); // Calculer le prix total
-        }
-    
-        // Fonction pour afficher le prix dans la div spécifiée
-        function displayPrice(resultDivId, price) {
-            document.getElementById(resultDivId).innerHTML = 'Estimation de prix : ' + price + ' €';
-        }
-    
-        // Fonction pour gérer l'initialisation de l'autocomplétion
-        function initAutocomplete(departureId, arrivalId) {
-            var options = {
-                types: ['geocode'],
-                componentRestrictions: { country: 'fr' }
-            };
-    
-            var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById(departureId), options);
-            var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById(arrivalId), options);
-        }
-    
-        // Fonction pour calculer le prix et afficher le résultat
-        function calculateAndDisplayPrice(departureId, arrivalId, resultDivId) {
-            var departure = document.getElementById(departureId).value;
-            var arrival = document.getElementById(arrivalId).value;
-    
-            // Utilisez l'API Distance Matrix pour obtenir la distance entre les deux adresses
-            var service = new google.maps.DistanceMatrixService();
-            service.getDistanceMatrix({
-                origins: [departure],
-                destinations: [arrival],
-                travelMode: 'DRIVING',
-                unitSystem: google.maps.UnitSystem.METRIC
-            }, function(response, status) {
-                if (status == 'OK' && response.rows[0].elements[0].status == 'OK') {
-                    var distance = response.rows[0].elements[0].distance.value / 1000; // Convertir en kilomètres
-                    var price = calculatePriceBasedOnDistance(distance);
-                    displayPrice(resultDivId, price); // Afficher le résultat dans la div spécifiée
-                } else {
-                    alert('Erreur de calcul de distance : ' + status);
-                }
-            });
-        }
-    
-        // Utilisez l'événement load pour garantir que la page est complètement chargée
-        window.onload = function() {
-            initAutocomplete('departure1', 'arrival1');
-            initAutocomplete('departure2', 'arrival2');
-        };
-    </script>
-    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
