@@ -194,12 +194,9 @@
                 types: ['geocode'],
                 componentRestrictions: { country: 'fr' }
             };
-
             var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure'), options);
             var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival'), options);
         }
-
-        // Utilisez l'événement load pour garantir que la page est complètement chargée
         window.onload = function() {
             initAutocomplete();
         };

@@ -323,14 +323,11 @@
                 types: ['geocode'],
                 componentRestrictions: { country: 'fr' }
             };
-            // Premier formulaire
             var departureAutocomplete1 = new google.maps.places.Autocomplete(document.getElementById('departure1'), options);
             var arrivalAutocomplete1 = new google.maps.places.Autocomplete(document.getElementById('arrival1'), options);
-            // Deuxième formulaire
             var departureAutocomplete2 = new google.maps.places.Autocomplete(document.getElementById('departure2'), options);
             var arrivalAutocomplete2 = new google.maps.places.Autocomplete(document.getElementById('arrival2'), options);
         }
-        // Utilisez l'événement load pour garantir que la page est complètement chargée
         window.onload = function () {
             initAutocomplete();
         };
