@@ -320,16 +320,25 @@
     <script>
         function initAutocomplete() {
             var options = {
-                types: ['geocode'],  // Limitation des résultats aux adresses géographiques
-                componentRestrictions: { country: 'fr' }  // Limiter aux adresses en France
+                types: ['geocode'],
+                componentRestrictions: { country: 'fr' }
             };
 
             var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure'), options);
             var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival'), options);
         }
 
-        // Initialiser l'API lorsque le DOM est prêt
-        document.addEventListener('DOMContentLoaded', initAutocomplete);
+        function initializeGoogleMaps() {
+            google.maps.event.addListenerOnce(map, 'idle', initAutocomplete);
+        }
+
+        function loadGoogleMapsScript() {
+            var script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&callback=initializeGoogleMaps';
+            document.head.appendChild(script);
+        }
+
+        document.addEventListener('DOMContentLoaded', loadGoogleMapsScript);
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
