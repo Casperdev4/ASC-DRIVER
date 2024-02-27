@@ -147,16 +147,18 @@
     <script>
         function initAutocomplete() {
             var options = {
-                types: ['geocode'],  // Limitation des résultats aux adresses géographiques
-                componentRestrictions: { country: 'fr' }  // Limiter aux adresses en France
+                types: ['geocode'],
+                componentRestrictions: { country: 'fr' }
             };
 
             var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure'), options);
             var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival'), options);
         }
 
-        // Initialiser l'API après le chargement de la page
-        google.maps.event.addDomListener(window, 'load', initAutocomplete);
+        // Utilisez l'événement load pour garantir que la page est complètement chargée
+        window.onload = function() {
+            initAutocomplete();
+        };
     </script>
 </body>
 

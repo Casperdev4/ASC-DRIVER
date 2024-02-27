@@ -19,7 +19,8 @@
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-32x32.png">
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-96x96.png">
     <meta name="theme-color" content="#ffffff">
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr"></script>
 </head>
 
 <body>
@@ -255,9 +256,9 @@
             <label for="tel">Téléphone :</label>
             <input type="tel" id="tel" name="telephone" required>
             <label for="departure">Lieu de départ :</label>
-            <input type="text" id="departure" name="lieu_depart" required>
+            <input type="text" id="departure2" name="lieu_depart" required>
             <label for="arrival">Lieu d'arrivée :</label>
-            <input type="text" id="arrival" name="lieu_arrivee" required>
+            <input type="text" id="arrival2" name="lieu_arrivee" required>
             <label for="date">Date souhaitée :</label>
             <input type="date" id="date" name="date" required>
             <label for="time">Heure souhaitée :</label>
@@ -322,17 +323,18 @@
                 types: ['geocode'],
                 componentRestrictions: { country: 'fr' }
             };
-
-            var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure'), options);
-            var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival'), options);
+            // Premier formulaire
+            var departureAutocomplete1 = new google.maps.places.Autocomplete(document.getElementById('departure1'), options);
+            var arrivalAutocomplete1 = new google.maps.places.Autocomplete(document.getElementById('arrival1'), options);
+            // Deuxième formulaire
+            var departureAutocomplete2 = new google.maps.places.Autocomplete(document.getElementById('departure2'), options);
+            var arrivalAutocomplete2 = new google.maps.places.Autocomplete(document.getElementById('arrival2'), options);
         }
-
         // Utilisez l'événement load pour garantir que la page est complètement chargée
-        window.onload = function() {
+        window.onload = function () {
             initAutocomplete();
         };
     </script>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
