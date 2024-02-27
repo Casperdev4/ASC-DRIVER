@@ -18,6 +18,8 @@
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-32x32.png">
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-96x96.png">
     <meta name="theme-color" content="#ffffff">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places"></script>
 </head>
 
 <body>
@@ -187,7 +189,20 @@
             });
         });
     </script>
+    <script>
+        function initAutocomplete() {
+            var options = {
+                types: ['geocode'],  // Limitation des résultats aux adresses géographiques
+                componentRestrictions: { country: 'fr' }  // Limiter aux adresses en France
+            };
 
+            var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure'), options);
+            var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival'), options);
+        }
+
+        // Initialiser l'API après le chargement de la page
+        google.maps.event.addDomListener(window, 'load', initAutocomplete);
+    </script>
 </body>
 
 </html>
