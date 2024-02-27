@@ -2,7 +2,6 @@
 
 $nom = $_POST['nom'];
 $email = $_POST['email'];
-$telephone = $_POST['telephone'];
 $depart = $_POST['lieu_depart'];
 $arrive = $_POST['lieu_arrivee'];
 $date = $_POST['telephone'];
@@ -10,13 +9,12 @@ $heure = $_POST['heure'];
 $passagers = $_POST['passagers'];
 
 $message = "Nom: $nom \n";
-$message .= "E-mail: $email \n";
-$message .= "Telephone: $telephone \n";
-$message .= "Lieu de depart: $depart \n";
-$message .= "Lieu d'arrive: $arrive \n";
-$message .= "Date: $date \n";
-$message .= "Heure: $heure \n";
-$message .= "Passagers: $passagers \n";
+$message .= "/ E-mail: $email \n";
+$message .= "/ Depart: $depart \n";
+$message .= "/ Arrive: $arrive \n";
+$message .= "/ Date: $date \n";
+$message .= "/ Heure: $heure \n";
+$message .= "/ Passagers: $passagers \n";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
