@@ -21,9 +21,9 @@ body {
 .nos-vehicules-pc{display:flex;justify-content:center}.nos-vehicules-pc img{width:100%;margin-top:-10%;margin-bottom:-15%}
 .icon-atouts{display:flex;justify-content:space-around;width:100%}.icon-item{text-align:center;margin-top:1%}ion-icon{font-size:70px}
 .bouton-devis3{display:flex;justify-content:center;background-color:#000;color:#fff;font-size:22px;padding:1%;margin:2% 25% 10%;text-decoration:none;border-radius:25px}.bouton-devis3:hover{background-color:#45a049}
-.contact{margin-top:10%;padding:2%;background-color:#c8b29b}.contact h4{margin-bottom:3%;margin-top:7%;color:#222;text-align:center}.contact p,.liens a{margin:0;color:#fff;font-size:16px;background-color:#c8b29b}
+.contact{margin-top:10%;padding:2%;background-color:#c8b29b}.contact h4{margin-bottom:3%;margin-top:7%;color:#000000;text-align:center}.contact p,.liens a{margin:0;color:#000000;font-size:16px;background-color:#c8b29b}
 .liens-wp a, .liens-wp h6  {
-  color: #ffffff;
+  color: #000000;
   font-size: 13px;
   text-align: center;
   font-weight: 300;
@@ -45,7 +45,7 @@ body {
     display: block;
   }
   .nos-vehicules img,.nos-vehicules-mob{margin-bottom:-13%}.nos-vehicules{display:flex;justify-content:center}.nos-vehicules img{width:100%;margin-top:-25%}
-  .contact{padding-top:4%;margin-top:15%}.contact h4{margin-bottom:5%}.contact p{margin:0 0 3%;color:#fff}.contenu p{text-align:left;line-height:1.7}
+  .contact{padding-top:4%;margin-top:15%}.contact h4{margin-bottom:5%}.contact p{margin:0 0 3%;color:#000000}.contenu p{text-align:left;line-height:1.7}
   .liens-wp a,
   .liens-wp h6 {
     font-size: 13px;
