@@ -5,34 +5,42 @@
 <loc>https://chauffeur-prive-75.fr</loc>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/paris.webp</image:loc>
-        <image:title>Tour Eiffel Illuminée à Paris</image:title>
+        <image:title>chauffeur-prive-paris</image:title>
         <image:caption>Découvrez la majesté de la Tour Eiffel éclairée la nuit, un symbole emblématique de la ville de Paris.</image:caption>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/chauffeur-mercedes.webp</image:loc>
         <image:caption>Profitez d'une expérience de transport de premier ordre avec nos chauffeurs privés et nos véhicules Mercedes, alliant luxe et fiabilité.</image:caption>
-        <image:title>Chauffeur Privé avec Mercedes</image:title>
+        <image:title>chauffeur-prive</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/arc-de-triomphe.webp</image:loc>
         <image:caption>Choisir notre chauffeur privé, c'est s'offrir le luxe d'une expérience de transport à la hauteur du prestigieux Le Bistrol.</image:caption>
-        <image:title>Le Bistrol Palace</image:title>
+        <image:title>taxi</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/notre-dame.webp</image:loc>
         <image:caption>Choisir notre chauffeur privé, c'est s'offrir le luxe d'une expérience de transport à la hauteur du prestigieux Le Meurice.</image:caption>
-        <image:title>Le Meurice Palace</image:title>
+        <image:title>mise-a-disposition</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/mercedes-classe-c.webp</image:loc>
         <image:caption>Découvrez l'élégance et les performances de la Mercedes Classe C, symbole de luxe et de sophistication dans la conception automobile.</image:caption>
-        <image:title>Mercedes Classe C</image:title>
+        <image:title>chauffeur-prive-mercedes</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/mercedes-classe-e.webp</image:loc>
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
-        <image:title>Mercedes Classe E</image:title>
+        <image:title>chauffeur-prive-mercedes</image:title>
     </image:image>
+    <geo:geo>
+        <geo:format>decimal</geo:format>
+        <geo:latitude>48.8566</geo:latitude>
+        <geo:longitude>2.3522</geo:longitude>
+    </geo:geo>
+        <geo:region>ile-de-france</geo:region>
+        <geo:placename>Paris</geo:placename>
+        <geo:position>48.8566;2.3522</geo:position>
 </url>
 
 <url>
@@ -40,27 +48,43 @@
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/img-services.webp</image:loc>
         <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>Chauffeur Privé 75</image:title>
+        <image:title>chauffeur-prive-75</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/prestas-PC.svg</image:loc>
         <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>Chauffeur Privé Paris</image:title>
+        <image:title>chauffeur-prive-paris</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/prestas2-PC.svg</image:loc>
         <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>Chauffeur Privé 75</image:title>
+        <image:title>chauffeur-prive-75</image:title>
     </image:image>
     <image:image>
         <image:loc>https://chauffeur-prive-75.fr/presta-mobile.svg</image:loc>
         <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>Chauffeur Privé Paris</image:title>
+        <image:title>chauffeur-prive-paris</image:title>
     </image:image>
+    <geo:geo>
+        <geo:format>decimal</geo:format>
+        <geo:latitude>48.8566</geo:latitude>
+        <geo:longitude>2.3522</geo:longitude>
+    </geo:geo>
+        <geo:region>ile-de-france</geo:region>
+        <geo:placename>Paris</geo:placename>
+        <geo:position>48.8566;2.3522</geo:position>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-75.fr/reservation-chauffeur.html</loc>
+    <geo:geo>
+        <geo:format>decimal</geo:format>
+        <geo:latitude>48.8566</geo:latitude>
+        <geo:longitude>2.3522</geo:longitude>
+    </geo:geo>
+        <geo:region>ile-de-france</geo:region>
+        <geo:placename>Paris</geo:placename>
+        <geo:position>48.8566;2.3522</geo:position>
 </url>
 
 </urlset>
