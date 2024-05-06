@@ -12,13 +12,15 @@
     <link href="style.css" rel="stylesheet">
     <title>Chauffeur Prive - Discrétion, Ponctualité et Confort pour vos Trajets Personnalisés</title>
     <link rel="icon" type="image/x-icon" href="https://chauffeur-prive-75.fr/favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="https://chauffeur-prive-75.fr/logo/apple-icon-96x96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="96x96"
+        href="https://chauffeur-prive-75.fr/logo/apple-icon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://chauffeur-prive-75.fr/logo/android-icon-32x32.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-32x32.png">
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-96x96.png">
     <meta name="theme-color" content="#ffffff">
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr"></script>
 </head>
 
 <body>
@@ -54,15 +56,18 @@
     </div>
     <div class="presta1">
         <h2>CHAUFFEUR PRIVÉ</h2>
-        <img class="img-presta" src="https://chauffeur-prive-75.fr/prestas-PC.svg" alt="vtc-paris" loading="lazy" decoding="async">
+        <img class="img-presta" src="https://chauffeur-prive-75.fr/prestas-PC.svg" alt="vtc-paris" loading="lazy"
+            decoding="async">
     </div>
     <div class="presta2">
         <h2>ÉVÉNEMENTS</h2>
-        <img class="img-presta" src="https://chauffeur-prive-75.fr/prestas2-PC.svg" alt="chauffeur-prive" loading="lazy" decoding="async">
+        <img class="img-presta" src="https://chauffeur-prive-75.fr/prestas2-PC.svg" alt="chauffeur-prive" loading="lazy"
+            decoding="async">
     </div>
     <div class="presta1-mob">
         <h2>CHAUFFEUR PRIVÉ</h2>
-        <img class="img-presta" src="https://chauffeur-prive-75.fr/presta-mobile.svg" alt="location-voiture-avec-chauffeur" loading="lazy" decoding="async">
+        <img class="img-presta" src="https://chauffeur-prive-75.fr/presta-mobile.svg"
+            alt="location-voiture-avec-chauffeur" loading="lazy" decoding="async">
     </div>
     <a class="bouton-devis3" href="tel:0651249133">CONTACTEZ - NOUS</a>
     <div class="contenu">
@@ -87,13 +92,19 @@
     <a class="bouton-devis3" href="tel:0651249133">CONTACTEZ - NOUS</a>
     <h2>FOIRE AUX QUESTIONS</h2>
     <h4>Quels destinations proposez-vous ?</h4>
-    <h5>Nous proposons des services de transport privé personnalisés, incluant les transferts aéroport, les déplacements professionnels, les transports événementiels, les visites touristiques et des solutions sur mesure adaptées à vos besoins.</h5>
+    <h5>Nous proposons des services de transport privé personnalisés, incluant les transferts aéroport, les déplacements
+        professionnels, les transports événementiels, les visites touristiques et des solutions sur mesure adaptées à
+        vos besoins.</h5>
     <h4>Quelles sont les zones géographiques que vous servez ?</h4>
-    <h5>Nous sommes basés en Île-de-France et desservons principalement Paris et ses environs, y compris les principaux aéroports tels que CDG, ORY et BVA. Nous pouvons également organiser des trajets vers d'autres destinations en France ou à l'étranger selon vos besoins spécifiques.</h5>
+    <h5>Nous sommes basés en Île-de-France et desservons principalement Paris et ses environs, y compris les principaux
+        aéroports tels que CDG, ORY et BVA. Nous pouvons également organiser des trajets vers d'autres destinations en
+        France ou à l'étranger selon vos besoins spécifiques.</h5>
     <h4>Comment réserver un trajet ?</h4>
-    <h5>Vous pouvez réserver un trajet avec nous par téléphone en appelant directement ou en utilisant notre formulaire de contact en ligne sur notre site web.</h5>
+    <h5>Vous pouvez réserver un trajet avec nous par téléphone en appelant directement ou en utilisant notre formulaire
+        de contact en ligne sur notre site web.</h5>
     <h4>Quels sont vos tarifs et modes de paiement acceptés ?</h4>
-    <h5>Nos tarifs sont de 2€ par kilomètre. Nous acceptons les paiements en espèces, par carte bancaire et via PayPal.</h5>
+    <h5>Nos tarifs sont de 2€ par kilomètre. Nous acceptons les paiements en espèces, par carte bancaire et via PayPal.
+    </h5>
     <h4>Y a-t-il des frais supplémentaires à prévoir ?</h4>
     <h5>Non, aucun frais supplémentaire n'est à prévoir. Nos tarifs sont tout compris et transparents.</h5>
     <div class="form-container">
@@ -200,9 +211,25 @@
             var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure'), options);
             var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival'), options);
         }
-        window.onload = function() {
+        window.onload = function () {
             initAutocomplete();
         };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var telephoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            if (telephoneLinks.length > 0) {
+                var nombreClics = localStorage.getItem('nombreClics') || 0;
+                console.log('Nombre de clics actuel : ' + nombreClics);
+                telephoneLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        nombreClics++;
+                        localStorage.setItem('nombreClics', nombreClics);
+                        console.log('Clic sur un lien de téléphone ! Nouveau nombre de clics : ' + nombreClics);
+                    });
+                });
+            }
+        });
     </script>
 </body>
 

@@ -91,7 +91,8 @@
         <p>Profitez de nos tarifs avantageux pour vos trajets vers les aéroports, les rendez-vous d'affaires, les
             visites touristiques ou tout autre déplacement. Avec ASC DRIVER, vous bénéficiez d'un service de qualité à
             un prix abordable, sans frais supplémentaires ni surprises.</p>
-        <p>Réservez dès aujourd'hui et découvrez pourquoi nos clients choisissent ASC DRIVER pour leur transport privé !</p>
+        <p>Réservez dès aujourd'hui et découvrez pourquoi nos clients choisissent ASC DRIVER pour leur transport privé !
+        </p>
     </div>
     <div class="contact">
         <h4><strong class="strong-color">HORAIRES</strong></h4>
@@ -171,6 +172,22 @@
         window.onload = function () {
             initAutocomplete();
         };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var telephoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            if (telephoneLinks.length > 0) {
+                var nombreClics = localStorage.getItem('nombreClics') || 0;
+                console.log('Nombre de clics actuel : ' + nombreClics);
+                telephoneLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        nombreClics++;
+                        localStorage.setItem('nombreClics', nombreClics);
+                        console.log('Clic sur un lien de téléphone ! Nouveau nombre de clics : ' + nombreClics);
+                    });
+                });
+            }
+        });
     </script>
 </body>
 
