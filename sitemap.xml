@@ -29,7 +29,7 @@
         <image:title>taxi</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-75.fr/deplacement-professionnel.jpg</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/deplacement-professionnel.webp</image:loc>
         <image:caption>Choisissez notre service de chauffeur privé et profitez d'une expérience de transport haut de gamme, digne d'un vrai taxi parisien.</image:caption>
         <image:title>taxi-parisien</image:title>
     </image:image>
@@ -44,12 +44,12 @@
         <image:title>mise-a-disposition</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-75.fr/tourisme.jpg</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/tourisme.webp</image:loc>
         <image:caption>Optez pour notre service de chauffeur privé pour le tourisme et profitez d'une expérience de transport haut de gamme.</image:caption>
         <image:title>uber-taxi</image:title>
     </image:image>
     <image:image>
-        <image:loc>https://chauffeur-prive-75.fr/monument.jpg</image:loc>
+        <image:loc>https://chauffeur-prive-75.fr/monument.webp</image:loc>
         <image:caption>Optez pour notre service de chauffeur privé pour découvrir les monuments de Paris et profitez d'une expérience de transport haut de gamme.</image:caption>
         <image:title>tourisme-paris</image:title>
     </image:image>
