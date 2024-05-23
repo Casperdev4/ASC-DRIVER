@@ -4,8 +4,6 @@ $nom = $_POST['nom'];
 $email = $_POST['email'];
 $depart = $_POST['lieu_depart'];
 $arrive = $_POST['lieu_arrivee'];
-$date = $_POST['date'];
-$heure = $_POST['heure'];
 $passagers = $_POST['passagers'];
 $bagages = $_POST['bagages'];
 
@@ -13,8 +11,6 @@ $message = "NOM : $nom \n";
 $message .= "/ E-MAIL : $email \n";
 $message .= "/ DEPART : $depart \n";
 $message .= "/ ARRIVE : $arrive \n";
-$message .= "/ DATE : $date \n";
-$message .= "/ HEURE : $heure \n";
 $message .= "/ PASSAGERS : $passagers \n";
 $message .= "/ BAGAGES : $bagages \n";
 
