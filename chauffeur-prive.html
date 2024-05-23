@@ -48,8 +48,8 @@
               ]
             }
         </script>
-        <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr"></script>
+        <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr&libraries=places&version=weekly&client=gme-example"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZNKZVWS7K"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -177,37 +177,6 @@
     </h5>
     <h4>Y a-t-il des frais supplémentaires à prévoir ?</h4>
     <h5>Non, aucun frais supplémentaire n'est à prévoir. Nos tarifs sont tout compris et transparents.</h5>
-    <div class="form-container">
-        <h2>DEVIS GRATUIT</h2>
-        <form action="traitement.php" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="nom" required>
-            <label for="email">E-mail :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="departure">Départ :</label>
-            <input type="text" id="departure" name="lieu_depart" required>
-            <label for="arrival">Arrivée :</label>
-            <input type="text" id="arrival" name="lieu_arrivee" required>
-            <label for="date">Date :</label>
-            <input type="date" id="date" name="date" required>
-            <label for="time">Heure :</label>
-            <input type="time" id="time" name="heure" required>
-            <label for="passengers">Nombre de passagers :</label>
-            <select id="passengers" name="passagers" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <label for="bagages">Bagages :</label>
-            <select id="bagages" name="bagages" required>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <button type="submit">ENVOYER</button>
-        </form>
-    </div>
     <div class="contact">
         <h4><strong class="strong-color">HORAIRES</strong></h4>
         <p>Lundi : 24/24 <br>
