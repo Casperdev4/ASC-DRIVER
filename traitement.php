@@ -1,11 +1,13 @@
 <?php
 
-$nom = $_POST['nom'];
-$email = $_POST['email'];
-$depart = $_POST['lieu_depart'];
-$arrive = $_POST['lieu_arrivee'];
-$passagers = $_POST['passagers'];
-$bagages = $_POST['bagages'];
+header('Content-Type: text/html; charset=UTF-8');
+
+$nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
+$email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+$depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
+$arrive = htmlspecialchars($_POST['lieu_arrivee'], ENT_QUOTES, 'UTF-8');
+$passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
+$bagages = htmlspecialchars($_POST['bagages'], ENT_QUOTES, 'UTF-8');
 
 $message = "NOM : $nom \n";
 $message .= "/ E-MAIL : $email \n";
@@ -25,6 +27,7 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 try {
+
     $mail->isSMTP();
     $mail->Host       = 'smtp.ionos.fr';
     $mail->SMTPAuth   = true;
@@ -33,14 +36,16 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
+
     $mail->setFrom('contact@webprime.fr', 'ASC-DRIVER');
     $mail->addAddress('asc.driver@outlook.com');
     $mail->addAddress('contact@webprime.fr');
 
+    $mail->CharSet = 'UTF-8'; 
     $mail->isHTML(true);
-    $mail->Subject = 'Formulaire de contact';
-    $mail->Body    = $message;
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject = 'Formulaire';
+    $mail->Body    = nl2br($message);
+    $mail->AltBody = $message;
 
     $mail->send();
 
@@ -50,3 +55,4 @@ try {
     echo "Message non envoyé. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
+
