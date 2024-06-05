@@ -3,16 +3,16 @@
 header('Content-Type: text/html; charset=UTF-8');
 
 $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
-$email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+$telephone = htmlspecialchars($_POST['telephone'], ENT_QUOTES, 'UTF-8');
 $depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
 $arrive = htmlspecialchars($_POST['lieu_arrivee'], ENT_QUOTES, 'UTF-8');
 $passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
 $bagages = htmlspecialchars($_POST['bagages'], ENT_QUOTES, 'UTF-8');
 
 $message = "NOM : $nom \n";
-$message .= "/ E-MAIL : $email \n";
-$message .= "/ DEPART : $depart \n";
-$message .= "/ ARRIVE : $arrive \n";
+$message .= "/ TÉLÉPHONE : $telephone \n";
+$message .= "/ DÉPART : $depart \n";
+$message .= "/ ARRIVÉE : $arrive \n";
 $message .= "/ PASSAGERS : $passagers \n";
 $message .= "/ BAGAGES : $bagages \n";
 
