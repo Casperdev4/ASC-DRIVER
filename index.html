@@ -19,8 +19,6 @@
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-32x32.png">
     <meta name="msapplication-TileImage" content="https://chauffeur-prive-75.fr/logo/ms-icon-96x96.png">
     <meta name="theme-color" content="#ffffff">
-    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfsm_DhOVeDXNOPyr0xJ_F8-4UCkHC9t0&libraries=places&language=fr&libraries=places&version=weekly&client=gme-example"></script>
     <script type="application/ld+json">
             {
               "@context": "https://schema.org",
@@ -361,19 +359,6 @@
                 });
             });
         });
-    </script>
-    <script>
-        function initAutocomplete() {
-            var options = {
-                types: ['geocode'],
-                componentRestrictions: { country: 'fr' }
-            };
-            var departureAutocomplete1 = new google.maps.places.Autocomplete(document.getElementById('departure1'), options);
-            var arrivalAutocomplete1 = new google.maps.places.Autocomplete(document.getElementById('arrival1'), options);
-        }
-        window.onload = function () {
-            initAutocomplete();
-        };
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

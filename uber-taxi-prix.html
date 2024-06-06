@@ -233,19 +233,6 @@
             });
         });
     </script>
-    <script>
-        function initAutocomplete() {
-            var options = {
-                types: ['geocode'],
-                componentRestrictions: { country: 'fr' }
-            };
-            var departureAutocomplete = new google.maps.places.Autocomplete(document.getElementById('departure1'), options);
-            var arrivalAutocomplete = new google.maps.places.Autocomplete(document.getElementById('arrival1'), options);
-        }
-        window.onload = function () {
-            initAutocomplete();
-        };
-    </script>
 </body>
 
 </html>
