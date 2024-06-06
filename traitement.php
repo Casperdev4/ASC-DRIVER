@@ -20,12 +20,12 @@ if (contains_links_or_scripts($depart) || contains_links_or_scripts($arrive)) {
     exit();
 }
 
-$message = "NOM : $nom \n";
-$message .= "TÉLÉPHONE : $telephone \n";
-$message .= "DÉPART : $depart \n";
-$message .= "ARRIVÉE : $arrive \n";
-$message .= "PASSAGERS : $passagers \n";
-$message .= "BAGAGES : $bagages \n";
+$message = "NOM : $nom\n";
+$message .= "TÉLÉPHONE : $telephone\n";
+$message .= "DÉPART : $depart\n";
+$message .= "ARRIVÉE : $arrive\n";
+$message .= "PASSAGERS : $passagers\n";
+$message .= "BAGAGES : $bagages\n";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
