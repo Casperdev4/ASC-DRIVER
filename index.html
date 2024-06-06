@@ -92,7 +92,7 @@
     <div class="image-index">
         <img src="paris.webp" alt="chauffeur-prive-paris">
         <div class="form-container">
-            <form action="traitement.php" method="post">
+            <form action="traitement.php" method="post" onsubmit="return validateForm()">
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
                 <label for="phone">Téléphone :</label>
@@ -376,6 +376,21 @@
         window.onload = function () {
             initAutocomplete();
         };
+    </script>
+    <script>
+            function validateForm() {
+                var depart = document.getElementById("departure1").value;
+                var arrive = document.getElementById("arrival1").value;
+                var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
+                var scriptPattern = /<script\b[^>]*>(.*?)<\/script>/i;
+    
+                if (linkPattern.test(depart) || scriptPattern.test(depart) ||
+                    linkPattern.test(arrive) || scriptPattern.test(arrive)) {
+                    alert("Les liens et les scripts ne sont pas autorisés.");
+                    return false;
+                }
+                return true;
+            }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
