@@ -99,8 +99,8 @@ ion-icon{font-size:70px}
   .contact p{margin:0 0 3%;color:#000}
   .contenu p{text-align:left;line-height:1.7}
   .liens-wp a,.liens-wp h6{font-size:13px;text-align:center}
-  .contact-icon{display:flex;position:fixed;right:5%;bottom:5%}
-  .contact-icon img{display:block;width:40px;border-radius:20px}
+  .contact-icon{display:flex;position:fixed;right:4%;bottom:3%}
+  .contact-icon img{display:block;width:60px;border-radius:20px}
   .icon-item{text-align:center;margin-top:1%}
   .icon-item h3{font-size:13px}
   ion-icon{font-size:45px}
