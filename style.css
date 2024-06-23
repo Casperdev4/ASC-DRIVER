@@ -19,7 +19,7 @@ h3{text-align:center;font-weight:350;color:#222;font-size:18px;margin-top:3%}
 .dropdown,.nav-menu,.navbar input{display:none}
 [id^=btn]:checked+ul{display:block}
 .nav-menu{position:absolute;top:81%}
-.drop-item a,.nav-item a,.show{color:#000;text-decoration:none;font-size:1.2rem;line-height:3;margin-left:-2%}
+.drop-item a,.nav-item a,.show{color:#000;text-decoration:none;font-size:1.2rem;line-height:3;margin-left:-2%;font-weight:600}
 .drop-item a{margin-left:-4%;font-size:1.1rem;line-height:2.5}
 .nav-menu a:hover,.show:hover{color:#fff}
 .image-index,.image-prive,.image-reservation{position:relative;width:100%;color:#fff;text-align:center;display:flex;align-items:center;justify-content:center;overflow:hidden}
