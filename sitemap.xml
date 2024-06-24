@@ -63,8 +63,107 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur paris</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Paris</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-75.fr/transfert-aeroport.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-75.fr/mise-a-disposition-vtc.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-75.fr/visite-paris.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-75.fr/chauffeur-pour-entreprise.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
+</url>
+
+<url>
+<loc>https://chauffeur-prive-75.fr/chauffeur-prive.html</loc>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/prestas-PC.svg</image:loc>
+        <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
+        <image:title>chauffeur paris</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/prestas2-PC.svg</image:loc>
+        <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
+        <image:title>chauffeur prive</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>https://chauffeur-prive-75.fr/presta-mobile.svg</image:loc>
+        <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
+        <image:title>taxi pas cher paris</image:title>
+    </image:image>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -129,8 +228,17 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Seine-et-Marne (77)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Seine-et-Marne</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Seine-et-Marne</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>2.4482</geo:west>
+                <geo:east>3.4044</geo:east>
+                <geo:north>49.2130</geo:north>
+                <geo:south>48.2053</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -195,8 +303,17 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Yvelines (78)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Yvelines</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Yvelines</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.4279</geo:west>
+                <geo:east>2.1785</geo:east>
+                <geo:north>49.0781</geo:north>
+                <geo:south>48.5446</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -261,8 +378,17 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Essonne (91)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Essonne</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Essonne</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.9465</geo:west>
+                <geo:east>2.5436</geo:east>
+                <geo:north>48.7586</geo:north>
+                <geo:south>48.2607</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -327,8 +453,17 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Hauts-de-Seine (92)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Hauts-de-Seine</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Hauts-de-Seine</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>2.1336</geo:west>
+                <geo:east>2.3134</geo:east>
+                <geo:north>48.9444</geo:north>
+                <geo:south>48.7734</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -393,8 +528,17 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Seine-Saint-Denis (93)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Seine-Saint-Denis</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Seine-Saint-Denis</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>2.2624</geo:west>
+                <geo:east>2.4944</geo:east>
+                <geo:north>48.9690</geo:north>
+                <geo:south>48.8145</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -459,8 +603,17 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Val-de-Marne (94)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Val-de-Marne</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Val-de-Marne</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>2.4053</geo:west>
+                <geo:east>2.6124</geo:east>
+                <geo:north>48.8608</geo:north>
+                <geo:south>48.6780</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
@@ -525,35 +678,32 @@
         <image:caption>Plongez dans l'expérience de conduite ultime avec la Mercedes Classe E, alliant confort, innovation et style intemporel.</image:caption>
         <image:title>chauffeur Val-d'Oise (95)</image:title>
     </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Val-d'Oise</geo:placename>
-</url>
-
-<url>
-<loc>https://chauffeur-prive-75.fr/chauffeur-prive.html</loc>
-    <image:image>
-        <image:loc>https://chauffeur-prive-75.fr/prestas-PC.svg</image:loc>
-        <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>chauffeur paris</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-75.fr/prestas2-PC.svg</image:loc>
-        <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>chauffeur prive</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>https://chauffeur-prive-75.fr/presta-mobile.svg</image:loc>
-        <image:caption>Découvrez nos services de chauffeur privé, alliant luxe, ponctualité et confort pour des déplacements en toute sérénité à travers la ville.</image:caption>
-        <image:title>taxi pas cher paris</image:title>
-    </image:image>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Paris</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Val-d'Oise</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.9108</geo:west>
+                <geo:east>2.4944</geo:east>
+                <geo:north>49.2181</geo:north>
+                <geo:south>48.8561</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 <url>
 <loc>https://chauffeur-prive-75.fr/uber-taxi-prix.html</loc>
-        <geo:region>ile-de-france</geo:region>
-        <geo:placename>Paris</geo:placename>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
 </url>
 
 </urlset>
