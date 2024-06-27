@@ -37,7 +37,7 @@ try {
 
     $mail->setFrom('contact@webprime.fr', 'ASC-DRIVER');
     $mail->addAddress('asc.driver@outlook.com');
-    $mail->addAddress('contact@webprime.fr');
+    $mail->addAddress('webprime91@hotmail.com');
 
     $mail->CharSet = 'UTF-8'; 
     $mail->isHTML(true);
