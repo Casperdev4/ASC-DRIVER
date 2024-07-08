@@ -107,6 +107,21 @@
 </url>
 
 <url>
+<loc>https://chauffeur-prive-75.fr/chauffeur-mariage.html</loc>
+        <geo:geo>
+            <geo:format>kml</geo:format>
+            <geo:region>ile-de-france</geo:region>
+            <geo:placename>Paris</geo:placename>
+            <geo:BoundingBox>
+                <geo:west>1.451</geo:west>
+                <geo:east>3.575</geo:east>
+                <geo:north>49.225</geo:north>
+                <geo:south>48.028</geo:south>
+            </geo:BoundingBox>
+        </geo:geo>
+</url>
+
+<url>
 <loc>https://chauffeur-prive-75.fr/visite-paris.html</loc>
         <geo:geo>
             <geo:format>kml</geo:format>
