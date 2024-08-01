@@ -176,14 +176,20 @@
     <a class="bouton-devis3" href="tel:+33651249133" title="tarif navette domicile aéroport">CONTACTEZ - NOUS</a>
     <h2>NAVETTE AEROPORT PRIX</h2>
     <div class="p-vtc">
-        <p>Pour vos transferts vers et depuis les aéroports parisiens, ASC Driver vous propose des <strong>tarifs
-                fixes</strong> et compétitifs : <br><br>
-            - Aéroport d'Orly (ORY) : <strong>80 €</strong> <br>
-            - Aéroport Charles de Gaulle (CDG) : <strong>100 €</strong> <br><br>
-            Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires
-            des vols pour ajuster nos services en cas de retard ou d'avance.
-        </p>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+            <img src="classe-e-berline.webp" alt="">
+            Paris - Aéroport (CDG - ORY - LBG) : <strong>90 €</strong> <br>
+            Orly - CDG : <strong>100 €</strong> <br>
+            Paris - Disneyland Paris : <strong>110 €</strong></p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+            <img src="mercedes-classe-s.webp" alt="">
+            Paris - Aéroport (CDG - ORY - LBG) : <strong>170 €</strong> <br>
+            Orly - CDG : <strong>190 €</strong> <br>
+            Paris - Disneyland Paris : <strong>190 €</strong></p>
+        </div>
     </div>
+    <a class="bouton-devis3" href="tel:+33651249133" title="tarif navette domicile aéroport">CONTACTEZ - NOUS</a>
     <div id="contact">
         <h5>NOS RÉSEAUX SOCIAUX</h5>
         <div class="reseau-contact">
@@ -228,6 +234,33 @@
                 });
             });
         });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.5
+                };
+                function observeStep(entry, observer) {
+                    entry.target.classList.add('slide-in-done');
+                    observer.unobserve(entry.target);
+                }
+                function createObserver(element) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                observeStep(entry, observer);
+                            }
+                        });
+                    }, observerOptions);
+                    observer.observe(element);
+                }
+                var elements = document.querySelectorAll('.slide');
+                elements.forEach(function (element) {
+                    createObserver(element);
+                });
+            });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

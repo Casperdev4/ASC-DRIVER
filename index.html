@@ -162,7 +162,7 @@
     <div class="camry-index">
         <img src="chauffeur-mercedes.webp" alt="vtc paris" title="chauffeur prive" loading="lazy" decoding="async">
     </div>
-    <div class="p-vtc">
+    <div class="p-lumiere">
         <p>
             Découvrez l'excellence de notre service <strong>privé</strong>, où le <strong>confort</strong>, la
             <strong>sécurité</strong>, et la
@@ -297,7 +297,7 @@
         </div>
     </div>
     <h2>PRIX CHAUFFEUR PRIVÉ PARIS</h2>
-    <div class="p-vtc">
+    <div class="p-lumiere">
         <p><strong>Les tarifs</strong> des chauffeurs en Île-de-France peuvent varier en fonction de plusieurs facteurs,
             tels que la <strong>distance</strong> parcourue, le moment de la journée, le jour de la semaine, et d'autres
             éventuels frais supplémentaires.</p>
@@ -306,7 +306,7 @@
             tarifs sont <strong>fixent</strong>.</p>
     </div>
     <h2>PRIX TAXI PARIS</h2>
-    <div class="p-vtc">
+    <div class="p-lumiere">
         <p><strong>Les tarifs</strong> des chauffeurs privés et des taxi en Île-de-France peuvent varier en fonction de
             plusieurs
             facteurs, tels
@@ -317,28 +317,38 @@
     </div>
     <h2>NAVETTE AEROPORT PRIX</h2>
     <div class="p-vtc">
-        <p>Pour vos transferts vers et depuis les aéroports parisiens, ASC Driver vous propose des <strong>tarifs
-                fixes</strong> et compétitifs : <br><br>
-            - Aéroport d'Orly (ORY) : <strong>80 €</strong> <br>
-            - Aéroport Charles de Gaulle (CDG) : <strong>100 €</strong> <br><br>
-            Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires
-            des vols pour ajuster nos services en cas de retard ou d'avance.
-        </p>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+            <img src="classe-e-berline.webp" alt="">
+            Paris - Aéroport (CDG - ORY - LBG) : <strong>90 €</strong> <br>
+            Orly - CDG : <strong>100 €</strong> <br>
+            Paris - Disneyland Paris : <strong>110 €</strong></p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+            <img src="mercedes-classe-s.webp" alt="">
+            Paris - Aéroport (CDG - ORY - LBG) : <strong>170 €</strong> <br>
+            Orly - CDG : <strong>190 €</strong> <br>
+            Paris - Disneyland Paris : <strong>190 €</strong></p>
+        </div>
     </div>
+    <a class="bouton-devis3" href="tel:+33647851015" title="reserver uber taxi">CONTACTEZ - NOUS</a>
     <h2>MISE À DISPOSITION VTC</h2>
     <div class="p-vtc">
-        <p>Profitez de notre service de mise à disposition de véhicules avec chauffeur pour <strong>60 € de
-                l'heure</strong>. <br><br>
-            - <strong>Flexibilité</strong> : Parfait pour déplacements professionnels, événements ou visites. <br>
-            - <strong>Confort</strong> : Véhicules haut de gamme, chauffeurs professionnels.<br>
-            - <strong>Réservation facile</strong> : Formulaire de contact ou téléphone. <br><br>
-            Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires
-            des vols pour ajuster nos services en cas de retard ou d'avance.
-        </p>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+            <img src="classe-e-berline.webp" alt="">
+            Forfait 4 heures min (80km max) : <strong>320 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
+            Heures additionnelles : <strong>80 €</strong> </p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+            <img src="mercedes-classe-s.webp" alt="">
+            Forfait 4 heures min (80km max) : <strong>480 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
+            Heures additionnelles : <strong>120 €</strong> </p>
+        </div>
     </div>
     <a class="bouton-devis3" href="tel:+33651249133" title="reserver uber">CONTACTEZ - NOUS</a>
     <h2>COMMENT RESERVER UN CHAUFFEUR ?</h2>
-    <div class="p-vtc">
+    <div class="p-lumiere">
         <p>Avec <strong>ASC DRIVER</strong>, la réservation de votre chauffeur est <strong>simple et
                 rapide</strong>. À l'aide du formulaire de contact, il vous suffit de sélectionner votre lieu de prise
             en
@@ -375,7 +385,7 @@
                     decoding="async"></a>
         </div>
     </div>
-    <div class="p-vtc">
+    <div class="p-lumiere">
         <p>Bienvenue à bord de notre flotte exclusive de véhicules allemands haut de gamme. Nous sommes fiers de vous
             proposer une expérience de conduite exceptionnelle avec nos <strong>Mercedes Classe C et Classe E</strong>.
             Ces bijoux de
@@ -433,6 +443,33 @@
                 });
             });
         });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.5
+                };
+                function observeStep(entry, observer) {
+                    entry.target.classList.add('slide-in-done');
+                    observer.unobserve(entry.target);
+                }
+                function createObserver(element) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                observeStep(entry, observer);
+                            }
+                        });
+                    }, observerOptions);
+                    observer.observe(element);
+                }
+                var elements = document.querySelectorAll('.slide');
+                elements.forEach(function (element) {
+                    createObserver(element);
+                });
+            });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
