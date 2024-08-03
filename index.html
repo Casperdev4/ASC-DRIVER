@@ -570,6 +570,26 @@
                 });
             });
     </script>
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value.trim();
+                var tel = document.getElementById("tel").value.trim();
+                var services = document.getElementById("departure1").value.trim();
+                var comments = document.getElementById("comments").value.trim();
+                if (name === "" || tel === "" || departure1 === "" || comments === "") {
+                    alert("Tous les champs sont obligatoires.");
+                    return false;
+                }
+                var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
+                var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
+    
+                if (linkPattern.test(comments) || scriptPattern.test(comments)) {
+                    alert("Pas autorisés.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
