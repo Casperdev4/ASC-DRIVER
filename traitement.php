@@ -1,8 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 
-// Champs requis
-$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure', 'passagers', 'enfants', 'bagages', 'sieges_auto'];
+$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure'];
 foreach ($required_fields as $field) {
     if (empty($_POST[$field])) {
         die('Un des champs requis est manquant.');
