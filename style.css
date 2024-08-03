@@ -26,12 +26,19 @@ h3{text-align:center;font-weight:350;color:#222;font-size:18px;margin-top:3%}
 .image-index,.image-prive,.image-reservation{position:relative;width:100%;color:#fff;text-align:center;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .image-index img,.image-prive img,.image-reservation img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1}
 .image-index{height:620px}
-.form-container{display:flex;flex-direction:column;align-items:center;padding:8px;padding-top:20px;margin:0;margin-top:3%;margin-left:3%;width:40%;box-shadow:0 0 10px rgba(0,0,0,0.6);color:#fff;background-color: #000000;background-color: rgba(0, 0, 0, 0.4);;border-radius:20px;z-index:1}
-.form-container h2{color:#222}
+.form-container{display:flex;flex-direction:column;align-items:center;padding:8px;padding-top:20px;margin:0;margin-top:3%;margin-left:3%;width:40%;box-shadow:0 0 2px rgb(255, 255, 255);color:#fff;background-color: #c8b29b;z-index:1;border-radius: 20px;}
+.form-container h2{color:#fff}
 .form-container label{display:block;margin-bottom:8px;font-size:19px;margin-left:2%;text-align:left;color:#000000;}
+textarea {
+  width: 94%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 .form-container input,.form-container select{width:100%;height:35px;padding:8px 80px 8px 8px;margin-bottom:16px;box-sizing:border-box;border-radius:10px;border:1px solid #333;background-color:#f2f2f2;color:#000}
-.form-container button{display:flex;justify-content:center;background-color:#000;color:#ffff;padding:10px 40px;font-size:18px;margin:4% auto 5%;border:none;border-radius:4px;cursor:pointer}
-.form-container button:hover{background-color:#45a049}
+.form-container button{display:flex;justify-content:center;background-color:#000000;color:#ffff;padding:10px 40px;font-size:18px;margin:2% auto 6%;border:none;border-radius:4px;cursor:pointer}
+.form-container button:hover{background-color:#6c2210}
 #passengers{font-size:15px}
 .inline-container{display:flex;justify-content:space-between;width:100%}
 .inline-item{display:flex;flex-direction:column;width:48%}
@@ -70,8 +77,8 @@ h3{text-align:center;font-weight:350;color:#222;font-size:18px;margin-top:3%}
 .ville-lumiere{display:flex;justify-content:center;margin-top:5%;margin-bottom:5%;gap:5%}
 .ville-lumiere img{width:40%;height:auto}
 .img-presta{margin-bottom:10%;width:85%;display:block;margin-left:auto;margin-right:auto}
-.nos-vehicules-pc{display:flex;justify-content:center}
-.nos-vehicules-pc img{width:100%;margin-top:-10%;margin-bottom:-15%}
+.nos-vehicules-pc{display:flex;justify-content:center;width: 60%;margin-left: auto;margin-right: auto;gap: 10%;}
+.nos-vehicules-pc img{width:100%;margin-top:0%;margin-bottom:5%;border-radius: 20px;}
 .icon-atouts{display:flex;justify-content:space-around;width:100%}
 .icon-item{text-align:center;margin-top:1%}
 ion-icon{font-size:70px}
@@ -161,7 +168,11 @@ ion-icon{font-size:70px}
   .icon-item h3{font-size:13px}
   ion-icon{font-size:45px}
   .bouton-devis3{display:flex;justify-content:center;font-size:18px;padding:2%;text-decoration:none;margin:7% 15% 10%}
-  .form-container{width:80%;padding-top:15px;margin:0 auto}
+  .form-container{width:85%;padding-top:20px;padding-left: 0;padding-right: 0;margin:0 auto;margin-bottom: -10%;}
+  .inline-container{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
+  .inline-item{width:48%}
+  form {width: 85%;}
+  .form-container input,.form-container select{width:100%;height:35px;padding:8px 8px 8px 8px;margin-bottom:16px;box-sizing:border-box;border-radius:10px;border:1px solid #333;background-color:#f2f2f2;color:#000;}
   .inline-container{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
   .inline-item{width:48%}
   .image-index {
