@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 
+// Champs requis
 $required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure', 'passagers', 'enfants', 'bagages', 'sieges_auto'];
 foreach ($required_fields as $field) {
     if (empty($_POST[$field])) {
@@ -12,6 +13,7 @@ $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
 $telephone = htmlspecialchars($_POST['telephone'], ENT_QUOTES, 'UTF-8');
 $depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
 $arrive = htmlspecialchars($_POST['lieu_arrivee'], ENT_QUOTES, 'UTF-8');
+$numero = htmlspecialchars($_POST['numero'] ?? '', ENT_QUOTES, 'UTF-8');
 $date = htmlspecialchars($_POST['date'], ENT_QUOTES, 'UTF-8');
 $heure = htmlspecialchars($_POST['heure'], ENT_QUOTES, 'UTF-8');
 $passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
@@ -24,6 +26,7 @@ $message = "NOM : $nom\n";
 $message .= "TÉLÉPHONE : $telephone\n";
 $message .= "DÉPART : $depart\n";
 $message .= "ARRIVÉE : $arrive\n";
+$message .= "NUMÉRO DE VOL/TRAINS : $numero\n";
 $message .= "DATE : $date\n";
 $message .= "HEURE : $heure\n";
 $message .= "ADULTES : $passagers\n";
@@ -51,7 +54,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('contact@webprime.fr', 'MD-VTC');
+    $mail->setFrom('contact@webprime.fr', 'ASC-DRIVER');
     $mail->addAddress('asc.driver@outlook.com');
     $mail->addAddress('webprime91@hotmail.com');
 
