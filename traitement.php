@@ -1,71 +1,37 @@
 <?php
-
 header('Content-Type: text/html; charset=UTF-8');
 
-function sanitize_input($data) {
-    $data = strip_tags($data);
-    $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
-    return $data;
+$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure', 'passagers', 'enfants', 'bagages', 'sieges_auto'];
+foreach ($required_fields as $field) {
+    if (empty($_POST[$field])) {
+        die('Un des champs requis est manquant.');
+    }
 }
 
-function contient_liens($texte) {
-    $patternLien = "/https?:\/\/[^\s]+|<a\s+href\s*=\s*['\"]?[^\s>]+['\"]?/i";
-    $patternScript = "/<script[^>]*>[\s\S]*?<\/script>/i";
-    return preg_match($patternLien, $texte) || preg_match($patternScript, $texte);
-}
+$nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
+$telephone = htmlspecialchars($_POST['telephone'], ENT_QUOTES, 'UTF-8');
+$depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
+$arrive = htmlspecialchars($_POST['lieu_arrivee'], ENT_QUOTES, 'UTF-8');
+$date = htmlspecialchars($_POST['date'], ENT_QUOTES, 'UTF-8');
+$heure = htmlspecialchars($_POST['heure'], ENT_QUOTES, 'UTF-8');
+$passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
+$enfants = htmlspecialchars($_POST['enfants'], ENT_QUOTES, 'UTF-8');
+$bagages = htmlspecialchars($_POST['bagages'], ENT_QUOTES, 'UTF-8');
+$sieges_auto = htmlspecialchars($_POST['sieges_auto'], ENT_QUOTES, 'UTF-8');
+$commentaires = htmlspecialchars($_POST['commentaires'], ENT_QUOTES, 'UTF-8');
 
-function est_vide($champ) {
-    return !isset($champ) || trim($champ) === '';
-}
-
-function contient_cyrillique($texte) {
-    return preg_match("/[\p{Cyrillic}]/u", $texte);
-}
-
-$nom = sanitize_input($_POST['nom']);
-$telephone = sanitize_input($_POST['telephone']);
-$depart = sanitize_input($_POST['lieu_depart']);
-$arrive = sanitize_input($_POST['lieu_arrivee']);
-$numero = sanitize_input($_POST['numero']);
-$date = sanitize_input($_POST['date']);
-$heure = sanitize_input($_POST['heure']);
-$passagers = sanitize_input($_POST['passagers']);
-$enfants = sanitize_input($_POST['enfants']);
-$bagages = sanitize_input($_POST['bagages']);
-$sieges_auto = sanitize_input($_POST['sieges_auto']);
-$commentaires = sanitize_input($_POST['commentaires']);
-
-// Validation
-if (est_vide($nom) || est_vide($telephone) || est_vide($depart) || est_vide($arrive) || est_vide($date) || est_vide($heure)) {
-    echo "Certains champs obligatoires sont manquants.";
-    exit();
-}
-
-if (contient_liens($commentaires)) {
-    echo "Le formulaire contient des liens ou des scripts interdits.";
-    exit();
-}
-
-if (contient_cyrillique($commentaires)) {
-    echo "Les caractères cyrilliques ne sont pas autorisés.";
-    exit();
-}
-
-// Préparation du message
 $message = "NOM : $nom\n";
 $message .= "TÉLÉPHONE : $telephone\n";
 $message .= "DÉPART : $depart\n";
 $message .= "ARRIVÉE : $arrive\n";
-$message .= "NUMÉRO DE VOL/TRAIN : $numero\n";
 $message .= "DATE : $date\n";
 $message .= "HEURE : $heure\n";
-$message .= "PASSAGERS : $passagers\n";
+$message .= "ADULTES : $passagers\n";
 $message .= "ENFANTS : $enfants\n";
 $message .= "BAGAGES : $bagages\n";
 $message .= "SIÈGES AUTO : $sieges_auto\n";
 $message .= "COMMENTAIRES : $commentaires\n";
 
-// Envoi de l'email
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -85,7 +51,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('contact@webprime.fr', 'ASC-DRIVER');
+    $mail->setFrom('contact@webprime.fr', 'MD-VTC');
     $mail->addAddress('asc.driver@outlook.com');
     $mail->addAddress('webprime91@hotmail.com');
 
@@ -103,4 +69,3 @@ try {
     echo "Message non envoyé. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
-
