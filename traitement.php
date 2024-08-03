@@ -1,11 +1,19 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 
-$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure'];
+$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure', 'passagers', 'enfants', 'bagages', 'sieges_auto'];
 foreach ($required_fields as $field) {
     if (empty($_POST[$field])) {
         die('Un des champs requis est manquant.');
     }
+}
+
+function nettoyer_commentaire($commentaire) {
+    $commentaire = strip_tags($commentaire, '<p><br>');
+    $commentaire = preg_replace('/<a\s+href=[\'"][^\'"]*[\'"]\s*>.*?<\/a>/is', '', $commentaire);
+    $commentaire = preg_replace('/<script\b[^>]*>([\s\S]*?)<\/script>/i', '', $commentaire);
+    $commentaire = preg_replace('/[\p{Cyrillic}]/u', '', $commentaire);
+    return htmlspecialchars($commentaire, ENT_QUOTES, 'UTF-8');
 }
 
 $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
@@ -19,7 +27,7 @@ $passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
 $enfants = htmlspecialchars($_POST['enfants'], ENT_QUOTES, 'UTF-8');
 $bagages = htmlspecialchars($_POST['bagages'], ENT_QUOTES, 'UTF-8');
 $sieges_auto = htmlspecialchars($_POST['sieges_auto'], ENT_QUOTES, 'UTF-8');
-$commentaires = htmlspecialchars($_POST['commentaires'], ENT_QUOTES, 'UTF-8');
+$commentaires = nettoyer_commentaire($_POST['commentaires'] ?? '');
 
 $message = "NOM : $nom\n";
 $message .= "TÉLÉPHONE : $telephone\n";
@@ -71,3 +79,4 @@ try {
     echo "Message non envoyé. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
+
