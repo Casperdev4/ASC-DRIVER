@@ -2,18 +2,27 @@
 
 header('Content-Type: text/html; charset=UTF-8');
 
-$nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
-$telephone = htmlspecialchars($_POST['telephone'], ENT_QUOTES, 'UTF-8');
-$depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
-$arrive = htmlspecialchars($_POST['lieu_arrivee'], ENT_QUOTES, 'UTF-8');
-$numero = htmlspecialchars($_POST['numero'], ENT_QUOTES, 'UTF-8');
-$date = htmlspecialchars($_POST['date'], ENT_QUOTES, 'UTF-8');
-$heure = htmlspecialchars($_POST['heure'], ENT_QUOTES, 'UTF-8');
-$passagers = htmlspecialchars($_POST['passagers'], ENT_QUOTES, 'UTF-8');
-$enfants = htmlspecialchars($_POST['enfants'], ENT_QUOTES, 'UTF-8');
-$bagages = htmlspecialchars($_POST['bagages'], ENT_QUOTES, 'UTF-8');
-$sieges_auto = htmlspecialchars($_POST['sieges_auto'], ENT_QUOTES, 'UTF-8');
-$commentaires = htmlspecialchars($_POST['commentaires'], ENT_QUOTES, 'UTF-8');
+function sanitize_input($data) {
+    $data = strip_tags($data);
+    $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+    $data = preg_replace('/<a\s+href\s*=\s*["\'][^"\']*["\']/i', '[Lien supprimé]', $data);
+    $data = preg_replace('/<script\b[^>]*>([\s\S]*?)<\/script>/i', '[Script supprimé]', $data);
+    $data = preg_replace('/https?:\/\/[^\s]+/i', '[URL supprimée]', $data);
+    return $data;
+}
+
+$nom = sanitize_input($_POST['nom']);
+$telephone = sanitize_input($_POST['telephone']);
+$depart = sanitize_input($_POST['lieu_depart']);
+$arrive = sanitize_input($_POST['lieu_arrivee']);
+$numero = sanitize_input($_POST['numero']);
+$date = sanitize_input($_POST['date']);
+$heure = sanitize_input($_POST['heure']);
+$passagers = sanitize_input($_POST['passagers']);
+$enfants = sanitize_input($_POST['enfants']);
+$bagages = sanitize_input($_POST['bagages']);
+$sieges_auto = sanitize_input($_POST['sieges_auto']);
+$commentaires = sanitize_input($_POST['commentaires']);
 
 $message = "NOM : $nom\n";
 $message .= "TÉLÉPHONE : $telephone\n";
@@ -65,5 +74,6 @@ try {
     echo "Message non envoyé. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
+
 
 

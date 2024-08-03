@@ -570,34 +570,6 @@
                 });
             });
     </script>
-<script>
-    function validateForm() {
-        var name = document.getElementById("name").value.trim();
-        var phone = document.getElementById("phone").value.trim();
-        var departure = document.getElementById("departure1").value.trim();
-        var arrival = document.getElementById("arrival1").value.trim();
-        var comments = document.getElementById("comments").value.trim();
-
-        // Vérifier les champs obligatoires
-        if (name === "" || phone === "" || departure === "" || arrival === "") {
-            alert("Champs obligatoires.");
-            return false;
-        }
-
-        // Expression régulière pour détecter les URL et les balises <script>
-        var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-        var scriptPattern = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-
-        // Vérifier les commentaires pour les URL ou les balises <script>
-        if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-            alert("Pas autorisé.");
-            return false;
-        }
-
-        return true;
-    }
-</script>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
