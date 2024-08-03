@@ -577,17 +577,23 @@
             var departure = document.getElementById("departure1").value.trim();
             var arrival = document.getElementById("arrival1").value.trim();
             var comments = document.getElementById("comments").value.trim();
+
+            // Vérifier les champs obligatoires
             if (name === "" || phone === "" || departure === "" || arrival === "") {
                 alert("Champs obligatoires.");
                 return false;
             }
+
+            // Expression régulière pour détecter les URL et les balises <script>
             var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-    
+            var scriptPattern = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+
+            // Vérifier les commentaires pour les URL ou les balises <script>
             if (linkPattern.test(comments) || scriptPattern.test(comments)) {
                 alert("Pas autorisé.");
                 return false;
             }
+
             return true;
         }
     </script>
