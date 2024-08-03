@@ -1,13 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 
-$required_fields = ['nom', 'telephone', 'lieu_depart', 'lieu_arrivee', 'date', 'heure'];
-foreach ($required_fields as $field) {
-    if (empty($_POST[$field])) {
-        die('Un des champs requis est manquant.');
-    }
-}
-
 $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
 $telephone = htmlspecialchars($_POST['telephone'], ENT_QUOTES, 'UTF-8');
 $depart = htmlspecialchars($_POST['lieu_depart'], ENT_QUOTES, 'UTF-8');
