@@ -7,6 +7,7 @@ h1,h2{text-align:center;font-weight:600}
 h1{font-size:40px;line-height:1.4;margin:5% 3%;font-family: 'Trajan', serif;}
 p{font-size:19px;margin:5%;text-align:center;background-color:#f9f6f4;padding:2%;}
 .p-lumiere,.p-vtc{line-height:1.8}
+.p-vtc p{border-radius: 20px;}
 .p-vtc img { display: flex;justify-content: center;width: 20%;margin-left: auto;margin-right: auto;margin-top: 2%;margin-bottom: 2%;}
 h2{color:#867664;margin:7% 3% 5%;font-size:30px}
 h3{text-align:center;font-weight:350;color:#222;font-size:18px;margin-top:3%}

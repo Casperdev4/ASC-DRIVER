@@ -173,14 +173,24 @@
     <a class="bouton-devis3" href="tel:+33651249133" title="musée insolite paris">CONTACTEZ - NOUS</a>
     <h2>MISE À DISPOSITION VTC</h2>
     <div class="p-vtc">
-        <p>Profitez de notre service de mise à disposition de véhicules avec chauffeur pour <strong>60 € de
-                l'heure</strong>. <br><br>
-            - <strong>Flexibilité</strong> : Parfait pour déplacements professionnels, événements ou visites. <br>
-            - <strong>Confort</strong> : Véhicules haut de gamme, chauffeurs professionnels.<br>
-            - <strong>Réservation facile</strong> : Formulaire de contact ou téléphone. <br><br>
-            Nos chauffeurs professionnels vous assurent un trajet confortable et ponctuel. Nous surveillons les horaires
-            des vols pour ajuster nos services en cas de retard ou d'avance.
-        </p>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE E</strong>
+            <img src="classe-e-berline.webp" alt="">
+            Forfait 3 heures min (80km max) : <strong>240 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>750 €</strong> <br>
+            Heures additionnelles : <strong>80 €</strong> </p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE V</strong>
+            <img src="van.webp" alt="">
+            Forfait 3 heures min (80km max) : <strong>270 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>850 €</strong> <br>
+            Heures additionnelles : <strong>90 €</strong> </p>
+        </div>
+        <div class="slide"><p><strong class="strong-pvtc">MERCEDES CLASSE S</strong>
+            <img src="mercedes-classe-s.webp" alt="">
+            Forfait 3 heures min (80km max) : <strong>360 €</strong> <br>
+            Forfait 10 heures min (250km max) : <strong>1150 €</strong> <br>
+            Heures additionnelles : <strong>120 €</strong> </p>
+        </div>
     </div>
     <h2>RESERVATION</h2>
     <div class="form-container">
@@ -294,6 +304,33 @@
                 });
             });
         });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.5
+                };
+                function observeStep(entry, observer) {
+                    entry.target.classList.add('slide-in-done');
+                    observer.unobserve(entry.target);
+                }
+                function createObserver(element) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                observeStep(entry, observer);
+                            }
+                        });
+                    }, observerOptions);
+                    observer.observe(element);
+                }
+                var elements = document.querySelectorAll('.slide');
+                elements.forEach(function (element) {
+                    createObserver(element);
+                });
+            });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
