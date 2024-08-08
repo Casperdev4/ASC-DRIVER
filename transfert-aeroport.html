@@ -191,7 +191,7 @@
         <div class="image-container">
             <img src="./logo-black/img-form.webp" alt="chauffeur prive paris">
         </div>
-        <form action="traitement.php" method="post">
+        <form action="traitement.php" method="post" onsubmit="return validateForm()">
             <label for="name">Nom</label>
             <input type="text" id="name" name="nom" required>
             <label for="phone">Téléphone</label>
