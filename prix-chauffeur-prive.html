@@ -227,6 +227,16 @@
             <input type="text" id="name" name="nom" required>
             <label for="phone">Téléphone</label>
             <input type="tel" id="phone" name="telephone" required>
+            <label for="prestation">Prestation</label>
+            <select id="prestation" name="prestation">
+                <option value="transfert">Transfert aéroport</option>
+                <option value="MAD">Mise à disposition</option>
+                <option value="mariage">Mariage</option>
+                <option value="tourisme">Tourisme</option>
+                <option value="pro">Déplacement professionnel</option>
+                <option value="trajet">Trajet Privé</option>^
+                <option value="autre">Autre</option>
+            </select>
             <label for="departure">Départ</label>
             <input type="text" id="departure1" name="lieu_depart" required>
             <label for="arrival">Arrivée</label>
@@ -276,6 +286,15 @@
                 <div class="inline-item">
                     <label for="car-seats">Sièges auto</label>
                     <select id="car-seats" name="sieges_auto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="inline-item">
+                    <label for="rehausseur">Réhausseur</label>
+                    <select id="rehausseur" name="rehausseur">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
